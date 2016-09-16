@@ -1,9 +1,3 @@
-begin
-  require 'aws-sdk'
-rescue LoadError
-  raise LoadError.new("Missing required 'aws-sdk'.  Please 'gem install aws-sdk' and require it in your application.")
-end
-
 module SitemapGenerator
   class AwsSdkV2Adapter
 
